@@ -1,0 +1,26 @@
+
+$item-padding: 1em;
+ion-img.logo{
+  max-width: 40px;
+}
+ion-item.task{
+  --background:lightyellow;
+  --inner-padding-start: $item-padding;
+  --inner-padding-end: $item-padding;
+  --inner-padding-top: $item-padding;
+  --inner-padding-bottom: $item-padding;
+}
+ion-item.task.done{
+  --background:lightgreen;
+  opacity: 0.5;
+  h2.name{
+    text-decoration: line-through;
+  }
+}
+ion-item.task.timeout{
+  --background:red;
+}
+
+ion-item h2.name{
+  font-weight: 400;
+}
